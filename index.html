@@ -338,6 +338,27 @@
 }
 </style>
 
+
+<style>
+/* Four focused product destinations: real artwork, direct product links. */
+.editorial-products{display:grid;grid-template-columns:1fr;gap:30px;max-width:980px;margin:0 auto}
+.editorial-product{display:grid;grid-template-columns:minmax(230px, .85fr) minmax(0,1.15fr);align-items:center;gap:34px;text-align:left;padding:26px;background:#fffaf0;border:1px solid #e3d6bd;border-radius:16px;box-shadow:0 10px 28px #1b241b12}
+.editorial-art{width:100%;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:#f2eadb;border-radius:12px;overflow:hidden}
+.editorial-art img{display:block;width:100%;height:100%;object-fit:contain}
+.editorial-copy .eyebrow{color:#a91422;font-size:10px;letter-spacing:2px;margin-bottom:12px}
+.editorial-copy h3{font:italic bold clamp(25px,3vw,36px)/1.08 Georgia,serif;color:#073c32;margin:0 0 14px}
+.editorial-copy p{font-size:14px;line-height:1.7;color:#39483f;margin:0 0 20px}
+.product-actions{display:flex;flex-wrap:wrap;gap:12px}
+.product-actions .btn{font-size:11px;padding:13px 17px}
+.product-actions .btn-secondary{background:#073c32;box-shadow:0 5px 0 #031f19}
+@media(max-width:700px){
+ .editorial-product{grid-template-columns:1fr;gap:20px;padding:18px}
+ .editorial-art{max-width:420px;margin:0 auto}
+ .editorial-copy{text-align:center}
+ .product-actions{justify-content:center}
+}
+</style>
+
 </head>
 
 <body>
@@ -374,87 +395,66 @@
 
 <section class="section" id="designs">
 <div class="wrap">
-<div class="section-title">
-<h2>🎄 Featured Christmas Picks 🎄</h2>
-<p>6 DESIGNS. ENDLESS LAUGHS.</p>
-</div>
-<div class="products">
-
-<article class="product">
-<div class="mock"><img src="holy-shit-im-drunk.jpg" alt="Holy Shit, I'm Drunk Christmas design"></div>
-<h3>Holy Shit, I'm Drunk.</h3>
-<a class="btn" href="https://www.redbubble.com/i/t-shirt/Holy-shit-I-m-drunk-Funny-Christmas-apparel-and-more-by-DondaWood/155334456/lrcw" target="_blank" rel="noopener">SHOP NOW ↗</a>
-</article>
-
-<article class="product">
-<div class="mock"><img src="merry-drunk-christmas.jpg" alt="Merry Drunk... I'm Christmas design"></div>
-<h3>Merry Drunk... I'm Christmas.</h3>
-<a class="btn" href="https://www.redbubble.com/i/t-shirt/Merry-drunk-I-m-Christmas-Funny-Christmas-apparel-and-more-by-DondaWood/155459166/lrcw" target="_blank" rel="noopener">SHOP NOW ↗</a>
-</article>
-
-<article class="product">
-<div class="mock"><img src="nothing-for-you-bitch.jpg" alt="Nothing for You, Bitch Christmas design"></div>
-<h3>Nothing for You, Bitch!</h3>
-<a class="btn" href="https://www.redbubble.com/i/t-shirt/Nothing-for-you-bitch-Funny-Christmas-apparel-for-festive-fun-by-DondaWood/155565521/lrcw" target="_blank" rel="noopener">SHOP NOW ↗</a>
-</article>
-
-<article class="product">
-<div class="mock"><img src="rudolph-reinbeer.jpg" alt="Rudolph the Reinbeer Christmas design"></div>
-<h3>Rudolph the Reinbeer.</h3>
-<a class="btn" href="https://www.redbubble.com/i/t-shirt/Rudolph-the-Reinbeer-Funny-Christmas-apparel-for-festive-fun-by-DondaWood/155717419/lrcw" target="_blank" rel="noopener">SHOP NOW ↗</a>
-</article>
-
-<article class="product">
-<div class="mock"><img src="embrace-traditions.jpg" alt="Embrace Traditions Christmas design"></div>
-<h3>Embrace Traditions.</h3>
-<a class="btn" href="https://www.redbubble.com/i/t-shirt/Kiss-me-under-the-mistletoe-Funny-winky-Christmas-apparel-and-more-by-DondaWood/156376337/lrcw" target="_blank" rel="noopener">SHOP NOW ↗</a>
-</article>
-
-<article class="product">
-<div class="mock"><img src="santa-clues.jpg" alt="Santa Clues Christmas design"></div>
-<h3>Santa Clues.</h3>
-<a class="btn" href="https://www.redbubble.com/i/t-shirt/Santa-Clues-Droll-Christmas-apparel-and-more-by-DondaWood/156303557/lrcw" target="_blank" rel="noopener">SHOP NOW ↗</a>
-</article>
-
-</div>
-</div>
-</section>
-
-<section class="office-campaign" id="office-mug">
-  <div class="wrap office-campaign-inner">
-
-    <img
-      src="funny-christmas-mug-office-meeting-specteeculous.png"
-      alt="Funny Christmas mug Ho Ho Holy Sh*t I'm Drunk during an office meeting"
-    >
-
-    <div class="office-campaign-copy">
-
-      <div class="eyebrow">
-        ✦ THE OFFICE EDITION ✦
-      </div>
-
-      <h2>It's Just Coffee.</h2>
-
-      <p>
-        Why is everyone so suspicious?
-        Bring a little questionable Christmas spirit
-        to your next meeting with the mug that makes
-        an innocent coffee break look hilariously suspicious.
-      </p>
-
-      <a
-        class="btn"
-        href="https://www.redbubble.com/i/mug/Holy-shit-I-m-drunk-Funny-Christmas-apparel-and-more-by-DondaWood/155334456/7yqg"
-        target="_blank"
-        rel="noopener"
-      >
-        SHOP YOUR MUG NOW! ↗
-      </a>
-
-    </div>
+  <div class="section-title">
+    <h2>🎄 The Specteeculous Christmas Edit 🎄</h2>
+    <p>TWO ICONIC DESIGNS. FOUR WAYS TO GIFT A LITTLE MISCHIEF.</p>
   </div>
+
+  <div class="products editorial-products">
+    <article class="product editorial-product">
+      <div class="editorial-art"><img src="merry-drunk-christmas.jpg" alt="Merry Drunk... I'm Christmas vintage Christmas lettering design"></div>
+      <div class="editorial-copy">
+        <div class="eyebrow">✦ THE FESTIVE CLASSIC ✦</div>
+        <h3>Merry Drunk... I'm Christmas!</h3>
+        <p>For the person who brings their own kind of Christmas spirit. A cheeky festive design made for holiday laughs.</p>
+        <div class="product-actions">
+          <a class="btn" href="https://www.redbubble.com/i/t-shirt/Merry-drunk-I-m-Christmas-Funny-Christmas-apparel-and-more-by-DondaWood/155459166/lrcw" target="_blank" rel="noopener">SHOP THE T-SHIRT ↗</a>
+          <a class="btn btn-secondary" href="https://www.redbubble.com/i/mug/Merry-drunk-I-m-Christmas-Funny-Christmas-apparel-and-more-by-DondaWood/155459166/7yqg" target="_blank" rel="noopener">SHOP THE MUG ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product editorial-product">
+      <div class="editorial-art"><img src="merry-drunk-christmas.jpg" alt="Merry Drunk... I'm Christmas design for a festive mug"></div>
+      <div class="editorial-copy">
+        <div class="eyebrow">✦ THE COFFEE-BREAK EDITION ✦</div>
+        <h3>A Little Christmas Spirit. In Every Sip.</h3>
+        <p>Make coffee breaks more festive and a whole lot less innocent. The Merry Drunk design is ready to join the desk, sofa or Christmas table.</p>
+        <div class="product-actions">
+          <a class="btn" href="https://www.redbubble.com/i/mug/Merry-drunk-I-m-Christmas-Funny-Christmas-apparel-and-more-by-DondaWood/155459166/7yqg" target="_blank" rel="noopener">SHOP THE MUG ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product editorial-product">
+      <div class="editorial-art"><img src="holy-shit-im-drunk.jpg" alt="Ho Ho Holy Shit, I'm Drunk vintage Santa Christmas design"></div>
+      <div class="editorial-copy">
+        <div class="eyebrow">✦ THE SANTA PARTY EDITION ✦</div>
+        <h3>Ho Ho Holy Shit, I'm Drunk!</h3>
+        <p>Santa's not here to judge. He's here to raise a glass. A loud, irreverent Christmas design for people who like their holidays with a little extra mischief.</p>
+        <div class="product-actions">
+          <a class="btn" href="https://www.redbubble.com/i/t-shirt/Holy-shit-I-m-drunk-Funny-Christmas-apparel-and-more-by-DondaWood/155334456/lrcw" target="_blank" rel="noopener">SHOP THE T-SHIRT ↗</a>
+          <a class="btn btn-secondary" href="https://www.redbubble.com/i/mug/Holy-shit-I-m-drunk-Funny-Christmas-apparel-and-more-by-DondaWood/155334456/7yqg" target="_blank" rel="noopener">SHOP THE MUG ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="product editorial-product">
+      <div class="editorial-art"><img src="holy-shit-im-drunk.jpg" alt="Ho Ho Holy Shit, I'm Drunk Christmas design for a mug"></div>
+      <div class="editorial-copy">
+        <div class="eyebrow">✦ THE QUESTIONABLE COFFEE EDITION ✦</div>
+        <h3>Ho Ho Holy Shit... It's Just Coffee.</h3>
+        <p>Looks like trouble. Could be coffee. This cheeky mug brings a little suspicious festive spirit to every office meeting and morning brew.</p>
+        <div class="product-actions">
+          <a class="btn" href="https://www.redbubble.com/i/mug/Holy-shit-I-m-drunk-Funny-Christmas-apparel-and-more-by-DondaWood/155334456/7yqg" target="_blank" rel="noopener">SHOP THE MUG ↗</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
 </section>
+
+
 
 <section class="story" id="about">
 <div class="wrap story-grid">
